@@ -1,15 +1,14 @@
-import './styles/global.css';
-import { Habit } from "./components/Habit";
+import { Header } from "./components/Header";
+import "./styles/global.css";
 
-function App(){
+// import { Habit } from "./components/Habit";
+
+export function App() {
   return (
-    <div>
-      <Habit completed={10} />
-      <Habit completed={20} />
-      <Habit completed={30} />
-      <Habit completed={40} />
+    <div className="flex items-center justify-center w-screen h-screen">
+      <div className="flex flex-col w-full max-w-5xl gap-16 px-6">
+        <Header />
+      </div>
     </div>
-  )
+  );
 }
-
-export default App;
